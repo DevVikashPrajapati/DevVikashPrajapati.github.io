@@ -89,6 +89,9 @@
   .pbody strong{color:var(--ink)}
   .note{margin-top:22px;color:var(--ink-soft);font-size:.95rem}
 
+  .bul{margin:14px 0 0 1.1em;color:var(--ink-soft);max-width:64ch}
+  .bul li{margin-bottom:8px}
+  .bul.tight{margin-top:0}
   .exp h3{font-size:1.25rem;font-weight:700}
   .exp p{color:var(--ink-soft);max-width:60ch;margin-top:6px}
 
@@ -123,6 +126,7 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#stack">Stack</a>
+      <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -158,8 +162,8 @@
       <div class="split">
         <h2>About</h2>
         <div>
-          <p>I currently work at Yoeki, and before that at Great Developers Info Tech. Across both I've built and maintained applications that handle real business workflows: hiring pipelines, CRM and employee performance reviews.</p>
-          <p>I like simple, readable C#, SQL that is tuned for the query at hand, and fixing the problem in front of me without rewriting everything around it. I'm also learning how to bring AI into .NET apps with Semantic Kernel, Ollama and retrieval pipelines.</p>
+          <p>I'm a software developer at Yoeki Soft. Before that I spent three and a half years at Great Developers Info Tech, migrating older applications to ASP.NET Core and building CRM, HRMS and performance management systems used in production.</p>
+          <p>I like simple, readable C#, queries tuned with proper indexing and server-side pagination, and fixing the problem in front of me without rewriting everything around it. I also write short articles on C#, SQL and API performance, and I'm learning how to bring AI into .NET apps with Semantic Kernel, Ollama and retrieval pipelines.</p>
         </div>
       </div>
     </section>
@@ -185,8 +189,8 @@
           <details>
             <summary><span class="pname">Performance Management System</span><span class="pkind">HR and reviews</span><span class="plus" aria-hidden="true"></span></summary>
             <div class="pbody">
-              <p>Employee review workflows with role-based access and reporting for managers and HR.</p>
-              <p><strong>Built with</strong> ASP.NET Core, SQL Server</p>
+              <p>A live PMS covering performance reviews, KRA/KPI, competencies, goals, PIP and balanced scorecard modules, with multi-tenant, company-level data management.</p>
+              <p><strong>Built with</strong> C#, ASP.NET Core, Razor Pages, MySQL, Vue.js</p>
             </div>
           </details>
           <p class="note">These are company products, so I describe them here instead of sharing source code. Public repositories are on <a href="https://github.com/DevVikashPrajapati">GitHub</a>.</p>
@@ -198,8 +202,9 @@
       <div class="split">
         <h2>Stack</h2>
         <dl>
-          <dt>Back end</dt><dd>C#, ASP.NET Core, MVC, Razor Pages</dd>
-          <dt>Data</dt><dd>SQL Server, T-SQL, stored procedures, Dapper</dd>
+          <dt>Back end</dt><dd>C#, ASP.NET Core, MVC, Razor Pages, REST APIs, async programming</dd>
+          <dt>Front end</dt><dd>JavaScript, jQuery, Vue.js, Bootstrap</dd>
+          <dt>Data</dt><dd>SQL Server, MySQL, ADO.NET, Dapper, stored procedures, indexing and query optimization</dd>
           <dt>Learning</dt><dd>Anthropic API, Semantic Kernel, Ollama, Qdrant, RAG pipelines</dd>
         </dl>
       </div>
@@ -209,10 +214,37 @@
       <div class="split">
         <h2>Experience</h2>
         <div>
-          <h3>.NET Developer, Yoeki</h3>
-          <p>Current role. Building and maintaining enterprise web applications with ASP.NET Core and SQL Server.</p>
-          <h3 style="margin-top:26px">.NET Developer, Great Developers Info Tech Pvt Ltd</h3>
-          <p>Previous role. Designed, built and maintained enterprise web applications and background services.</p>
+          <h3>Software developer, Yoeki Soft Private Limited</h3>
+          <p>Apr 2026 to present. Noida, on-site. Full-time.</p>
+          <h3 style="margin-top:28px">Software developer, Great Developers Info Tech Pvt Ltd</h3>
+          <p>Oct 2022 to Mar 2026. Noida, on-site. Full-time.</p>
+          <ul class="bul">
+            <li>Migrated older applications to ASP.NET Core and modern .NET, and enhanced existing features with C#, Razor Pages, ADO.NET, MySQL, jQuery and Vue.js.</li>
+            <li>Worked on CRM, HRMS and a live performance management system, including multi-tenant, company-level data management.</li>
+            <li>Built and maintained REST APIs and integrated email, WhatsApp and search services.</li>
+            <li>Improved performance with query optimization, indexing, server-side pagination and asynchronous processing.</li>
+            <li>Handled production issues, debugging and bug fixes with business and development teams.</li>
+          </ul>
+          <h3 style="margin-top:28px">B.Tech, Computer Science</h3>
+          <p>MGM College of Engineering and Technology, Noida. 2018 to 2021.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing">
+      <div class="split">
+        <h2>Writing</h2>
+        <div>
+          <ul class="bul tight">
+            <li>async/await in C#: what actually happens behind the scenes</li>
+            <li>Why your API is slow even when the SQL query is fast</li>
+            <li>Deferred vs immediate execution in LINQ</li>
+            <li>Why StringBuilder is faster than + in C#</li>
+            <li>Shallow copy vs deep copy in C#</li>
+            <li>Event-driven architecture explained with a real example</li>
+            <li>DB lock vs blocking vs deadlock, and DELETE vs TRUNCATE vs DROP</li>
+          </ul>
+          <p class="note">Published as articles on <a href="https://www.linkedin.com/in/vikash-prajapati-b4a26618b">LinkedIn</a>.</p>
         </div>
       </div>
     </section>
@@ -241,15 +273,16 @@
   const data = {
     "/profile": {
       name: "Vikash Prajapati",
-      role: ".NET developer",
+      role: "Software developer",
       experienceYears: 5,
-      company: "Yoeki",
-      location: "Noida, India",
+      company: "Yoeki Soft Private Limited",
+      location: "Delhi NCR, India",
       openToWork: true
     },
     "/stack": {
-      backend: ["C#", "ASP.NET Core", "MVC", "Razor Pages"],
-      data: ["SQL Server", "Dapper", "Stored procedures"],
+      backend: ["C#", "ASP.NET Core", "MVC", "Razor Pages", "REST APIs"],
+      frontend: ["JavaScript", "jQuery", "Vue.js"],
+      data: ["SQL Server", "MySQL", "ADO.NET", "Dapper"],
       learning: ["Semantic Kernel", "Ollama", "Qdrant", "RAG"]
     },
     "/projects": [
