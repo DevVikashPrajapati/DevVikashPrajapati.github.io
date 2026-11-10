@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vikash | .NET Developer</title>
+<meta name="description" content="Vikash - .NET developer with 5 years of experience building enterprise products with ASP.NET Core, C#, and SQL Server.">
+<style>
+  :root{
+    --bg:#0b0f17; --card:#121826; --border:#1f2937; --text:#e5e7eb; --muted:#9ca3af;
+    --accent:#6366f1; --accent2:#22d3ee;
+  }
+  [data-theme="light"]{
+    --bg:#f8fafc; --card:#ffffff; --border:#e2e8f0; --text:#0f172a; --muted:#475569;
+    --accent:#4f46e5; --accent2:#0891b2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:700;letter-spacing:.3px}
+  .logo span{color:var(--accent)}
+  .links{display:flex;gap:22px;align-items:center;font-size:.92rem;color:var(--muted)}
+  .links a:hover{color:var(--text)}
+  #theme{background:none;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:5px 10px;cursor:pointer}
+  header.hero{padding:96px 0 72px}
+  .tag{display:inline-block;font-size:.8rem;color:var(--accent2);border:1px solid var(--border);padding:4px 12px;border-radius:999px;margin-bottom:20px}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin-bottom:16px}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:620px;font-size:1.08rem}
+  .cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+  .btn{padding:11px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--border);transition:.2s}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn:hover{transform:translateY(-2px)}
+  .stats{display:flex;gap:36px;margin-top:48px;flex-wrap:wrap}
+  .stat b{display:block;font-size:1.8rem;color:var(--text)}
+  .stat span{color:var(--muted);font-size:.85rem}
+  section{padding:64px 0}
+  h2{font-size:1.7rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:32px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;transition:.25s}
+  .card:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .card h3{font-size:1.08rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.93rem}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{font-size:.75rem;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent2);border:1px solid var(--border)}
+  .skill-group h3{font-size:1rem;margin-bottom:10px;color:var(--accent2)}
+  .bar{margin:10px 0}
+  .bar div.l{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);margin-bottom:4px}
+  .bar .t{height:6px;background:var(--border);border-radius:99px;overflow:hidden}
+  .bar .f{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px;transition:width 1.1s ease}
+  .timeline{border-left:2px solid var(--border);padding-left:22px}
+  .tl{position:relative;margin-bottom:26px}
+  .tl::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+  .tl small{color:var(--muted)}
+  footer{border-top:1px solid var(--border);padding:36px 0;color:var(--muted);text-align:center;font-size:.88rem}
+  .contact-links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+  .reveal{opacity:0;transform:translateY(20px);transition:.7s}
+  .reveal.show{opacity:1;transform:none}
+  @media(max-width:640px){.links a:not(#theme){display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">vikash<span>.dev</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" aria-label="Toggle theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="tag">Open to .NET opportunities</span>
+    <h1>Hi, I'm Vikash.<br><span class="grad">.NET Developer</span></h1>
+    <p>5 years building enterprise products with ASP.NET Core, C# and SQL Server. I focus on reliable back-end systems, clean data access and performance, and I'm exploring AI integration with .NET.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="5">0</b><span>Years experience</span></div>
+      <div class="stat"><b data-count="5">0</b><span>Enterprise products</span></div>
+      <div class="stat"><b>Noida, IN</b><span>Location</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="reveal">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="sub">What I do and how I work.</p>
+    <p style="max-width:720px;color:var(--muted)">
+      I'm a .NET developer at Great Developers Info Tech Pvt Ltd. I build and maintain business-critical applications: payment and mandate workflows, inventory and tracking dashboards, applicant tracking, CRM and performance management. I prefer simple, maintainable code, well-tuned SQL, and targeted fixes over unnecessary rewrites.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">Tools I use day to day.</p>
+    <div class="grid">
+      <div class="card skill-group">
+        <h3>Backend</h3>
+        <div class="bar"><div class="l"><span>C# / .NET</span><span>Advanced</span></div><div class="t"><div class="f" data-w="90"></div></div></div>
+        <div class="bar"><div class="l"><span>ASP.NET Core / MVC</span><span>Advanced</span></div><div class="t"><div class="f" data-w="88"></div></div></div>
+        <div class="bar"><div class="l"><span>Razor Pages</span><span>Advanced</span></div><div class="t"><div class="f" data-w="85"></div></div></div>
+      </div>
+      <div class="card skill-group">
+        <h3>Data</h3>
+        <div class="bar"><div class="l"><span>SQL Server / T-SQL</span><span>Advanced</span></div><div class="t"><div class="f" data-w="88"></div></div></div>
+        <div class="bar"><div class="l"><span>Stored Procedures</span><span>Advanced</span></div><div class="t"><div class="f" data-w="86"></div></div></div>
+        <div class="bar"><div class="l"><span>Dapper</span><span>Advanced</span></div><div class="t"><div class="f" data-w="85"></div></div></div>
+      </div>
+      <div class="card skill-group">
+        <h3>Exploring: AI / ML</h3>
+        <div class="chips">
+          <span class="chip">Anthropic API</span><span class="chip">Semantic Kernel</span>
+          <span class="chip">Ollama</span><span class="chip">Qdrant</span><span class="chip">RAG pipelines</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Enterprise work, described at a high level. Source code is proprietary.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>NACH Mandate System</h3>
+        <p>End-to-end NACH/ACH mandate handling: background services for bank response processing, stored-procedure driven workflows and PDF generation.</p>
+        <div class="chips"><span class="chip">C#</span><span class="chip">Windows Services</span><span class="chip">SQL Server</span></div>
+      </div>
+      <div class="card">
+        <h3>GoTrack Gold</h3>
+        <p>Gold inventory and supply-chain product with dashboards, inventory modules and caching for faster reads.</p>
+        <div class="chips"><span class="chip">ASP.NET Core</span><span class="chip">Dapper</span><span class="chip">Caching</span></div>
+      </div>
+      <div class="card">
+        <h3>HiringBull ATS</h3>
+        <p>Applicant tracking system covering the hiring pipeline from job posting to candidate management.</p>
+        <div class="chips"><span class="chip">MVC</span><span class="chip">SQL Server</span></div>
+      </div>
+      <div class="card">
+        <h3>AlwaysClose CRM</h3>
+        <p>CRM for managing leads, follow-ups and customer interactions.</p>
+        <div class="chips"><span class="chip">Razor Pages</span><span class="chip">SQL Server</span></div>
+      </div>
+      <div class="card">
+        <h3>Performance Management System</h3>
+        <p>Employee performance and review workflows with role-based access and reporting.</p>
+        <div class="chips"><span class="chip">ASP.NET Core</span><span class="chip">Reporting</span></div>
+      </div>
+      <div class="card">
+        <h3>Open-source / Side Projects</h3>
+        <p>Add your public GitHub repos here (RAG demo, Semantic Kernel sample, etc.).</p>
+        <div class="chips"><a class="chip" href="https://github.com/DevVikashPrajapati">GitHub →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <p class="sub">Where I've been building.</p>
+    <div class="timeline">
+      <div class="tl">
+        <h3>.NET Developer</h3>
+        <small>Great Developers Info Tech Pvt Ltd · Noida, India · 5 years</small>
+        <p style="color:var(--muted);margin-top:6px">Design, development and maintenance of enterprise web applications and background services using ASP.NET Core, C#, SQL Server and Dapper.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="wrap" style="text-align:center">
+    <h2>Let's connect</h2>
+    <p class="sub">Open to .NET roles. Reach out any time.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
+      <a class="btn" href="https://github.com/DevVikashPrajapati">GitHub</a>
+      <a class="btn" href="resume.pdf">Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Vikash · Built with plain HTML/CSS/JS · Hosted on GitHub Pages</footer>
+
+<script>
+  // theme
+  const root=document.documentElement, saved=(()=>{try{return localStorage.getItem("theme")}catch(e){return null}})();
+  if(saved) root.setAttribute("data-theme",saved);
+  document.getElementById("theme").onclick=()=>{
+    const n=root.getAttribute("data-theme")==="light"?"dark":"light";
+    root.setAttribute("data-theme",n);
+    try{localStorage.setItem("theme",n)}catch(e){}
+  };
+  document.getElementById("yr").textContent=new Date().getFullYear();
+
+  // reveal + skill bars
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+      e.target.querySelectorAll(".f").forEach(f=>f.style.width=f.dataset.w+"%");
+      io.unobserve(e.target);
+    }
+  }),{threshold:.15});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+  // counters
+  document.querySelectorAll("[data-count]").forEach(el=>{
+    const end=+el.dataset.count; let n=0;
+    const t=setInterval(()=>{n++;el.textContent=n+"+";if(n>=end)clearInterval(t)},150);
+  });
+</script>
+</body>
+</html>
